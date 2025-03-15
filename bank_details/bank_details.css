@@ -1,0 +1,158 @@
+/* bank_details.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Light beige background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.email-instruction {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc; /* Dashed border as seen in the image */
+}
+
+.email-instruction h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #127d32; /* Green color for the title */
+    margin-bottom: 10px;
+}
+
+.email-instruction p {
+    font-size: 14px;
+    color: #000;
+}
+
+.email-instruction a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.email-instruction a:hover {
+    color: #007bff;
+}
+
+.bank-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bank {
+    padding: 10px 0;
+    border-bottom: 1px solid #000; /* Solid black border between sections */
+}
+
+.bank:last-child {
+    border-bottom: none; /* No border for the last bank */
+}
+
+.bank h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #127d32; /* Green color for bank names */
+    margin-bottom: 5px;
+}
+
+.bank p {
+    font-size: 14px;
+    color: #000;
+    margin: 2px 0;
+}
+
+.bank p strong {
+    font-weight: bold;
+}
+
+/* Upload Section Styles */
+.upload_section {
+    margin: 15px 0;
+}
+
+.upload_section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #127d32; /* Match the green color of other headings */
+    margin-bottom: 10px;
+}
+
+.upload-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #127d32; /* Green background */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0f6b29; /* Darker green on hover */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Red for delete button */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.btn-send {
+    background-color: #007bff; /* Blue for send button */
+    display: block;
+    margin: 10px 0;
+}
+
+.btn-send:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.photo-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.photo-preview img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.message-area {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
