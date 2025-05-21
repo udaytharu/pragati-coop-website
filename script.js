@@ -111,32 +111,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Alert Modal with Local Storage
-document.addEventListener('DOMContentLoaded', () => {
-    const alertModal = document.getElementById('alert-modal');
-    const closeAlertButton = document.getElementById('close-alert');
-    
-    if (alertModal && closeAlertButton) {
-        const modalShown = localStorage.getItem('alertModalShown');
-        
-        if (!modalShown) {
-            alertModal.classList.add('active');
-        }
-
-        const closeModal = () => {
-            alertModal.classList.remove('active');
-            localStorage.setItem('alertModalShown', 'true');
-        };
-
-        closeAlertButton.addEventListener('click', closeModal);
-        
-        alertModal.addEventListener('click', (event) => {
-            if (event.target === alertModal) {
-                closeModal();
-            }
-        });
-    }
-});
 
 // Lazy Loading Images
 document.addEventListener('DOMContentLoaded', () => {
