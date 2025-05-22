@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, rgba(187, 222, 251, 0.9), rgba(227, 242, 253, 0.9));
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ body {
 
 #notice .news-item {
     padding: 10px;
-    background-color: #e0e0e0;
+    background: linear-gradient(to right, rgba(187, 222, 251, 0.9), rgba(227, 242, 253, 0.9));
     margin: 5px 0;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ body {
 }
 h1 {
     font-size: 2rem;
-    color: #127d32;
+    color: #000;
     text-align: center;
     text-decoration: underline;
     margin-bottom: 20px;
@@ -71,14 +71,13 @@ h2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #127d32;
+    background-color: #1976D2;
     color: white;
     font-weight: normal;
     border: none;
     border-radius: 10%;
     width: 6rem;
     height: 2rem;
-    font-size: 1rem;
     cursor: pointer;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
     display: flex;
@@ -89,5 +88,5 @@ h2 {
   }
 
   .floating-button:hover {
-    background-color: #ffd700;
+    background-color: linear-gradient(to right, rgba(187, 222, 251, 0.9), rgba(227, 242, 253, 0.9));
   }
