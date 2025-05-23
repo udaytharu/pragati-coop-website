@@ -1,0 +1,25 @@
+coop/
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── script.js
+│   ├── images/
+│   │   ├── hero.jpg
+│   │   ├── main.png
+│   │   ├── favicon.png
+│   │   └── members/         (for member images)
+├── pages/
+│   ├── about/
+│   │   └── members.html
+│   ├── services/
+│   │   └── service-centers.html
+│   ├── notices/
+│   │   └── notice.html
+│   ├── downloads/
+│   │   └── downloads.html
+│   ├── bank-details/
+│   │   └── bank-details.html
+│   └── faq.html
+├── member_img/              (move contents to assets/images/members/)
+├── index.html

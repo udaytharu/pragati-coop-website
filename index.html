@@ -13,7 +13,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+            // Initialize EmailJS with your public key
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace this with your actual EmailJS public key
         })();
     </script>
 </head>
@@ -117,27 +118,27 @@
             <h2>Our Outreach</h2>
             <div class="outreach-grid">
                 <div class="outreach-item">
-                    <img src="/member_img/financial_literacy.jpg" alt="Financial Literacy Program">
+                    <img src="/assets/images/outreach_image/favicon.png" alt="Financial Literacy Program">
                     <h3>Financial Literacy Program</h3>
                 </div>
                 <div class="outreach-item">
-                    <img src="/member_img/women_empowerment.jpg" alt="Women Empowerment Initiative">
+                    <img src="/assets/images/outreach_image/favicon.png" alt="Women Empowerment Initiative">
                     <h3>Women Empowerment Initiative</h3>
                 </div>
                 <div class="outreach-item">
-                    <img src="/member_img/youth_entrepreneurship.jpg" alt="Youth Entrepreneurship Training">
+                    <img src="/assets/images/outreach_image/favicon.png" alt="Youth Entrepreneurship Training">
                     <h3>Youth Entrepreneurship Training</h3>
                 </div>
                 <div class="outreach-item">
-                    <img src="/member_img/agricultural_development.jpg" alt="Agricultural Development Program">
+                    <img src="/assets/images/outreach_image/favicon.png" alt="Agricultural Development Program">
                     <h3>Agricultural Development Program</h3>
                 </div>
                 <div class="outreach-item">
-                    <img src="/member_img/community_health.jpg" alt="Community Health Awareness">
+                    <img src="/assets/images/outreach_image/favicon.png" alt="Community Health Awareness">
                     <h3>Community Health Awareness</h3>
                 </div>
                 <div class="outreach-item">
-                    <img src="/member_img/digital_literacy.jpg" alt="Digital Literacy Campaign">
+                    <img src="/assets/images/outreach_image/favicon.png" alt="Digital Literacy Campaign">
                     <h3>Digital Literacy Campaign</h3>
                 </div>
             </div>
@@ -167,26 +168,38 @@
         
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form" novalidate>
-                <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="container">
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="from_email" placeholder="Your Email">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+        
+                        <button type="submit">Send Message</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Phone number*</label>
-                    <input type="tel" id="phone" name="phone" required>
+                <div class="map">
+                    <h2>Our Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537363153169!3d-37.81627997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727e3b3c4b1d!2sFederation+Square!5e0!3m2!1sen!2sau!4v1569996273723" allowfullscreen></iframe>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message*</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+            </div>
             <p>Address: Thakurbaba municipality -3 Bagnaha,Bardiya, Bardiya, Nepal | Phone: <a href="tel:+977-985-8026766">985-8026766</a> | Email: <a href="mailto:saccospragati@gmail.com">saccospragati@gmail.com</a></p>
         </section>
     </main>
