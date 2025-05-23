@@ -9,8 +9,10 @@ coop/
 │   ├── js/
 │   │   └── script.js       # Main JavaScript file
 │   └── images/
-│       ├── members/        # Member profile images
+|       ├──outreach_image   # outreach images
+|       ├──favicon.jpg      #faviocn image
 │       └── hero.jpg        # Banner image
+├── members/               # Member profile images
 ├── pages/
 │   ├── about/             # About us pages
 │   ├── services/          # Service center pages
