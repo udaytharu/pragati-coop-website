@@ -8,6 +8,7 @@ coop/
 │   │   ├── hero.jpg
 │   │   ├── main.png
 │   │   ├── favicon.png
+│   │   ├──outreach_image/   (for outreach image)
 │   │   └── members/         (for member images)
 ├── pages/
 │   ├── about/
