@@ -4,14 +4,11 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, rgba(187, 222, 251, 0.9), rgba(227, 242, 253, 0.9));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .container {
-    width: 80%;
+    margin-top: 100px;
+    width: 100%;
     max-width: 900px;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -150,27 +147,3 @@ body {
         font-size: 11px;
     }
 }
-
-.floating-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #1976D2;
-    color: white;
-    font-weight: normal;
-    border: none;
-    border-radius: 10%;
-    width: 6rem;
-    height: 2rem;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-    z-index: 1000;
-  }
-
-  .floating-button:hover {
-    background-color: linear-gradient(to right, rgba(187, 222, 251, 0.9), rgba(227, 242, 253, 0.9));
-  }

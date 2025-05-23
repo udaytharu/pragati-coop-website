@@ -6,9 +6,9 @@
     <meta name="description" content="Pragati Saving And Credit Cooperative Ltd. - Your trusted financial partner in Bardiya, Nepal">
     <title>Pragati Saving And Credit Cooperative Ltd.</title>
     <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -32,12 +32,18 @@
         <!-- Navigation Menu -->
         <nav class="nav-menu" aria-label="Main navigation">
             <ul>
-                <li><a href="#home" aria-current="page">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#service-center">Service Center</a></li>
-                <li><a href="/notice/notice.html">Notices</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/index.html#home" aria-current="page">Home</a></li>
+                <li class="dropdown-parent">
+                    <li class="dropdown">
+                    <a href="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/index.html#organization-profile">Cooperative Profile</a></li>
+                        <li><a href="/pages/about/members.html">Committee Members</a></li>
+                    </ul>
+                <li><a href="/index.html#services">Services</a></li>
+                <li><a href="/pages/services/service-centers.html">Service Center</a></li>
+                <li><a href="/pages/notices/notice.html">Notices</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
             </ul>
         </nav>    
     </header>
@@ -45,114 +51,94 @@
     <!-- Main Content -->
     <main id="main-content">
         <!-- Custom Banner Section -->
-        <section id="home" class="custom-banner">
-            <div class="banner-content">
-                <div class="logo-text">
-                    <div class="banner-image">
-                        <img src="main.png" alt="Pragati SACCOS Logo" loading="lazy">
+        <div id="home">
+            <section class="custom-banner">
+                <div class="banner-content">
+                    <div class="logo-image">
+                        <div class="banner-image">
+                            <img src="/assets/images/main.png" alt="Pragati SACCOS">
+                        </div>
+                    </div>
+                    <div class="banner-contact">
+                        <p><span class="icon">📞</span> <a href="tel:+977-985-8026766">985-8026766</a></p>
+                        <p><span class="icon">✉️</span> <a href="maito:saccospragati@gmail.com">saccospragati@gmail.com</a></p>
                     </div>
                 </div>
-                <div class="banner-contact">
-                    <p><span class="icon" aria-hidden="true">📞</span> <a href="tel:+977-985-8026766">985-8026766</a></p>
-                    <p><span class="icon" aria-hidden="true">✉️</span> <a href="mailto:saccospragati@gmail.com">saccospragati@gmail.com</a></p>
+                <div class="banner-text" style="margin-top: 90px;">
+                    <h4>Welcome to Pragati SACCOS</h4>
+                    <p>स्थानीय प्रतिष्ठित, व्यावसायिक, सामाजसेवी व्यक्तिहरूको समूहद्वारा सञ्चालित यस प्रगति बचत तथा ऋण सहकारी संस्था लि. २०१६ अन्तर्गत वि.सं. २०५३/५/२० मा स्थापना भए बिर्दिया जिल्लामा कार्यक्षेत्र रहेको यस प्रगति बचत तथा ऋण सहकारी संस्था लि. ले सदस्य केन्द्रित भएर आफ्ना सदस्यहरूको आर्थिक, सामाजिक र सांस्कृतिक समृद्धि हासिल गर्न प्रमुख उद्देश्य राखेको छ। स्वावलम्बन, स्व-उत्तरदायित्व, समानता, उत्तरदायित्व यस संस्थाको मूल्यमा आधारित रहेको छ।</p>
+                    <div class="follow_us">
+                        <p>Follow us on our <a href="https://www.facebook.com/">facebook</a> page.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="banner-text">
-                <h2>Welcome to Pragati SACCOS</h2>
-                <p>स्थानीय प्रतिष्ठित, व्यावसायिक, सामाजसेवी व्यक्तिहरूको समूहद्वारा सञ्चालित यस प्रगति बचत तथा ऋण सहकारी संस्था लि. २०१६ अन्तर्गत वि.सं. २०५२/५/२० मा स्थापना भए बर्दिया जिल्लामा कार्यक्षेत्र रहेको यस प्रगति बचत तथा ऋण सहकारी संस्था लि. ले सदस्य केन्द्रित भएर आफ्ना सदस्यहरूको आर्थिक, सामाजिक र सांस्कृतिक समृद्धि हासिल गर्न प्रमुख उद्देश्य राखेको छ। स्वावलम्बन, स्व-उत्तरदायित्व, समानता, उत्तरदायित्व यस संस्थाको मूल्यमा आधारित रहेको छ।</p>
-            </div>
-        </section>
-        <div class="follow_us">
-            <p>Follow us on our <a href="https://www.facebook.com/pragatisaving" target="_blank">facebook</a> page.</p>
+            </section>
         </div>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <div class="org-chart">
-                <h3>सञ्चालक समिति | BOD MEMBERS</h3>
-                <div class="chart-row">
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Chairman" width="100" height="100" loading="lazy">
-                        <h4>Chairman Name</h4>
-                        <p>Chairman | अध्यक्ष</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
+
+        <!-- Organization's Profile Section -->
+        <section id="organization-profile">
+            <h2>Organization's Profile</h2>
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <h3>Active Members</h3>
+                    <p>5000+</p>
                 </div>
-                <hr class="chart-line">
-                <div class="chart-row">
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Vice Chairman" width="100" height="100" loading="lazy">
-                        <h4>Vice Chairman Name</h4>
-                        <p>Vice Chairman | उपाध्यक्ष</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Secretary" width="100" height="100" loading="lazy">
-                        <h4>Secretary Name</h4>
-                        <p>Secretary | सचिव</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Treasurer" width="100" height="100" loading="lazy">
-                        <h4>Treasurer Name</h4>
-                        <p>Treasurer | काेषाध्यक्ष</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
+                <div class="profile-item">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    <h3>Branches</h3>
+                    <p>8</p>
                 </div>
-                <hr class="chart-line">
-                <div class="chart-row">
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Member 1" width="100" height="100" loading="lazy">
-                        <h4>Member 1 Name</h4>
-                        <p>Board Member | सदस्य</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Member 2" width="100" height="100" loading="lazy">
-                        <h4>Member 2 Name</h4>
-                        <p>Board Member | सदस्य</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Member 3" width="100" height="100" loading="lazy">
-                        <h4>Member 3 Name</h4>
-                        <p>Board Member | सदस्य</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Member 4" width="100" height="100" loading="lazy">
-                        <h4>Member 4 Name</h4>
-                        <p>Board Member | सदस्य</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
+                <div class="profile-item">
+                    <i class="fa fa-award" aria-hidden="true"></i>
+                    <h3>Years of Service</h3>
+                    <p>25</p>
+                </div>
+                <div class="profile-item">
+                    <i class="fa fa-calculator" aria-hidden="true"></i>
+                    <h3>Total Assets</h3>
+                    <p>NaN</p>
+                </div>
+                <div class="profile-item">
+                    <i class="fa fa-chart-line" aria-hidden="true"></i>
+                    <h3>Loan Disbursed</h3>
+                    <p>NaN</p>
+                </div>
+                <div class="profile-item">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <h3>Community Projects</h3>
+                    <p>50+</p>
                 </div>
             </div>
-            <hr class="section-separator">
-            <div class="org-chart">
-                <h3>लेखा सुपरिवेक्षण समिति | Account Supervision Committee</h3>
-                <div class="chart-row">
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Supervisor 1" width="100" height="100" loading="lazy">
-                        <h4>Coordinator Name</h4>
-                        <p>Coordinator | संयाेजक</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
+        </section>
+
+        <!-- Our Outreach Section -->
+        <section id="our-outreach">
+            <h2>Our Outreach</h2>
+            <div class="outreach-grid">
+                <div class="outreach-item">
+                    <img src="/member_img/financial_literacy.jpg" alt="Financial Literacy Program">
+                    <h3>Financial Literacy Program</h3>
                 </div>
-                <hr class="chart-line">
-                <div class="chart-row">
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Member 5" width="100" height="100" loading="lazy">
-                        <h4>Member 5 Name</h4>
-                        <p>Board Member | सदस्य</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
-                    <div class="chart-item">
-                        <img src="/member_img/member.jpg" alt="Member 6" width="100" height="100" loading="lazy">
-                        <h4>Member 6 Name</h4>
-                        <p>Board Member | सदस्य</p>
-                        <a href="tel:+977-985-8026766">985-8026766</a>
-                    </div>
+                <div class="outreach-item">
+                    <img src="/member_img/women_empowerment.jpg" alt="Women Empowerment Initiative">
+                    <h3>Women Empowerment Initiative</h3>
+                </div>
+                <div class="outreach-item">
+                    <img src="/member_img/youth_entrepreneurship.jpg" alt="Youth Entrepreneurship Training">
+                    <h3>Youth Entrepreneurship Training</h3>
+                </div>
+                <div class="outreach-item">
+                    <img src="/member_img/agricultural_development.jpg" alt="Agricultural Development Program">
+                    <h3>Agricultural Development Program</h3>
+                </div>
+                <div class="outreach-item">
+                    <img src="/member_img/community_health.jpg" alt="Community Health Awareness">
+                    <h3>Community Health Awareness</h3>
+                </div>
+                <div class="outreach-item">
+                    <img src="/member_img/digital_literacy.jpg" alt="Digital Literacy Campaign">
+                    <h3>Digital Literacy Campaign</h3>
                 </div>
             </div>
         </section>
@@ -174,51 +160,10 @@
                     <p>Fast and reliable money transfer. (IME money transfer)</p>
                 </div>
             </div>
-            <p><a href="downloads/downloads.html">Download</a> our services and policies</p>
+            <p><a href="/pages/downloads/downloads.html">Download</a> our services and policies</p>
         </section>
 
         <!-- Service Center Section -->
-        <section id="service-center">
-            <h2>Service Center</h2>
-            <div class="service-center-grid">
-                <div class="center-item">
-                    <h3>Main Branch</h3>
-                    <p>Thakurbaba municipality -3 Bagnaha,Bardiya, Bardiya, Nepal</p>
-                    <p>Phone: <a href="tel:+977-985-8026766">985-8026766</a></p>
-                    <p>Email: <a href="mailto:saccospragati@gmail.com">saccospragati@gmail.com</a></p>
-                    <p>Open: 10 AM - 5 PM</p>
-                </div>
-                <div class="center-item">
-                    <h3>1 Sewa Kendra</h3>
-                    <p>Email: <a href="maito:">mail@.com</a><br>Hotline: <a href="tel:+977-9876543210">+977-9876543210</a></p>
-                </div>
-                <div class="center-item">
-                    <h3>2 Sewa Kendra</h3>
-                    <p>Email: <a href="maito:">mail@.com</a><br>Hotline: <a href="tel:+977-9876543210">+977-9876543210</a></p>
-                </div>
-                <div class="center-item">
-                    <h3>3 Sewa Kendra</h3>
-                    <p>Email: <a href="maito:">mail@.com</a><br>Hotline: <a href="tel:+977-9876543210">+977-9876543210</a></p>
-                </div>
-                <div class="center-item">
-                    <h3>4 Sewa Kendra</h3>
-                    <p>Email: <a href="maito:">mail@.com</a><br>Hotline: <a href="tel:+977-9876543210">+977-9876543210</a></p>
-                </div>
-                <div class="center-item">
-                    <h3>5 Sewa Kendra</h3>
-                    <p>Email: <a href="maito:">mail@.com</a><br>Hotline: <a href="tel:+977-9876543210">+977-9876543210</a></p>
-                </div>
-                <div class="center-item">
-                    <h3>6 Sewa Kendra</h3>
-                    <p>Email: <a href="maito:">mail@.com</a><br>Hotline: <a href="tel:+977-9876543210">+977-9876543210</a></p>
-                </div>
-                <div class="center-item">
-                    <h3>7 Sewa Kendra</h3>
-                    <p>Email: <a href="maito:">mail@.com</a><br>Hotline: <a href="tel:+977-9876543210">+977-9876543210</a></p>
-                </div>
-            </div>
-        </section>
-
         
         <!-- Contact Section -->
         <section id="contact">
@@ -252,14 +197,14 @@
             <div class="footer-column">
                 <h3>Pages</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="/notice/notice.html">Notice</a></li> 
-                    <li><a href="downloads/downloads.html">Downloads</a></li>
-                    <li><a href="bank_details/bank_details.html">Bank Details for Online Payments</a></li>
-                    <li><a href="/faq.html">FAQ</a></li> 
+                    <li><a href="/index.html#home">Home</a></li>
+                    <li><a href="/index.html#organization-profile">About Us</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                    <li><a href="/index.html#services">Services</a></li>
+                    <li><a href="/pages/notices/notice.html">Notice</a></li> 
+                    <li><a href="/pages/downloads/downloads.html">Downloads</a></li>
+                    <li><a href="/pages/bank-details/bank_details.html">Bank Details for Online Payments</a></li>
+                    <li><a href="/pages/faq/faq.html">FAQ</a></li> 
                 </ul>
             </div>
             <div class="footer-column">
@@ -302,6 +247,6 @@
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
