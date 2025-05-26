@@ -1,0 +1,149 @@
+/* bank_details.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgba(187, 222, 251, 0.9), rgba(227, 242, 253, 0.9));
+}
+
+.container {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.email-instruction {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc; /* Dashed border as seen in the image */
+}
+
+.email-instruction h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Green color for the title */
+    margin-bottom: 10px;
+}
+
+.email-instruction p {
+    font-size: 14px;
+    color: #000;
+}
+
+.email-instruction a {
+    color: blue;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.bank-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bank {
+    padding: 10px 0;
+    border-bottom: 1px solid #000; /* Solid black border between sections */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bank:last-child {
+    border-bottom: none; /* No border for the last bank */
+}
+
+.bank-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; /* Green color for bank names */
+    margin-bottom: 5px;
+}
+
+.bank-info p {
+    font-size: 14px;
+    color: #000;
+    margin: 2px 0;
+}
+
+.bank-info p strong {
+    font-weight: bold;
+}
+
+.qr-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .bank {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .qr-image {
+        width: 130px;
+        height: 130px;
+    }
+
+    .email-instruction h2 {
+        font-size: 16px;
+    }
+
+    .email-instruction p {
+        font-size: 12px;
+    }
+
+    .bank-info h3 {
+        font-size: 14px;
+    }
+
+    .bank-info p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .qr-image {
+        width: 110px;
+        height: 110px;
+    }
+
+    .email-instruction h2 {
+        font-size: 14px;
+    }
+
+    .email-instruction p {
+        font-size: 11px;
+    }
+
+    .bank-info h3 {
+        font-size: 13px;
+    }
+
+    .bank-info p {
+        font-size: 11px;
+    }
+}
