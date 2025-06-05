@@ -21,13 +21,15 @@ pragati-saccos/
 │   ├── about/
 │   │   └── members.html
 │   ├── services/
-│   │   └── service-centers.html
+│   │   └── services.html
 │   ├── notices/
 │   │   └── notice.html
 │   ├── downloads/
 │   │   └── downloads.html
 │   ├── bank-details/
 │   │   └── bank_details.html
+│   ├── privacy-policy/
+│   │   └── privacy-policy.html
 │   └── faq/
 │       └── faq.html
 ├── index.html
@@ -43,6 +45,11 @@ pragati-saccos/
 - Contact form with EmailJS integration
 - Dynamic content loading
 - SEO optimized
+- Combined Privacy Policy & Terms of Service page
+- Welcome alert message for first-time visitors
+- Service cards with full image display
+- Bank details with QR codes
+- Notice board with image support
 
 ## Component Structure
 
@@ -55,7 +62,7 @@ The website uses a component-based architecture for better maintainability and r
 - Dropdown menus for About Us section
 
 ### Footer Component (`components/footer.html`)
-- Quick links to all pages
+- Quick links to all pages (including Privacy Policy)
 - Important external links
 - Office hours
 - Contact information
@@ -68,6 +75,49 @@ The website uses a component-based architecture for better maintainability and r
 - Mobile menu handling
 - Dropdown menu functionality
 - Scroll-to-top button
+
+## Pages
+
+### Privacy Policy & Terms of Service (`pages/privacy-policy/privacy-policy.html`)
+- Comprehensive privacy information
+- Terms of Service with user responsibilities
+- Intellectual property rights
+- Limitation of liability
+- Information collection and usage details
+- Security measures
+- User rights
+- Contact information
+- Last updated date
+
+### Services (`pages/services/services.html`)
+- Detailed service cards with images
+- Savings accounts information
+- Loan services details
+- Responsive grid layout
+- Full image display with aspect ratio preservation
+
+### Bank Details (`pages/bank-details/bank_details.html`)
+- Bank account information
+- QR codes for easy payments
+- Multiple payment options
+- Responsive layout
+
+### Notices (`pages/notices/notice.html`)
+- Notice board with image support
+- Horizontal scrolling for notices
+- Responsive design
+- Image preview functionality
+
+## Recent Updates
+
+- Combined Privacy Policy and Terms of Service into a single page
+- Updated service images to display full images while maintaining aspect ratio
+- Added welcome alert message for first-time visitors
+- Improved responsive design for all pages
+- Updated footer with privacy policy link
+- Enhanced service cards with better image display
+- Added bank details page with QR codes
+- Implemented notice board with image support
 
 ## Setup and Usage
 
@@ -135,7 +185,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Pragati SACCOS - [saccospragati@gmail.com](mailto:saccospragati@gmail.com)
 
-Website Link: [https://www.pragatisaccos.com.np](https://www.pragatisaccos.com.np)
+Website Link: [https://www.pragati.com.np](https://www.pragati.com.np)
 
 ## Acknowledgments
 

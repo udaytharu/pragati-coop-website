@@ -44,6 +44,40 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
+// Alert Message Functionality
+function showAlertMessage() {
+    setTimeout(function() {
+        const alert = document.getElementById('customAlert');
+        if (alert) {
+            // Create close button if it doesn't exist
+            if (!alert.querySelector('.alert-close')) {
+                const closeBtn = document.createElement('button');
+                closeBtn.className = 'alert-close';
+                closeBtn.innerHTML = '<i class="fas fa-times"></i>';
+                closeBtn.setAttribute('aria-label', 'Close alert');
+                closeBtn.onclick = function() {
+                    alert.style.display = 'none';
+                };
+                alert.appendChild(closeBtn);
+            }
+
+            alert.style.display = 'flex';
+            alert.style.alignItems = 'center';
+            alert.style.justifyContent = 'space-between'; // Changed to space-between for close button
+            
+            // Auto hide after 5 seconds
+            const autoHideTimeout = setTimeout(function() {
+                alert.style.display = 'none';
+            }, 5000);
+
+            // Clear timeout if user manually closes
+            alert.querySelector('.alert-close').addEventListener('click', function() {
+                clearTimeout(autoHideTimeout);
+            });
+        }
+    }, 1000);
+}
+
 // EmailJS Contact Form Submission
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById("contact-form");
@@ -119,21 +153,24 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    showAlertMessage();
 });
 
 // Scroll Handling with Performance Optimization
 const goToTopButton = document.querySelector('.go-to-top');
+
 if (goToTopButton) {
+    // Show/hide button based on scroll position
     window.addEventListener('scroll', () => {
-        if (!isScrolling) {
-            requestAnimationFrame(() => {
-                goToTopButton.classList.toggle('visible', window.scrollY > SCROLL_THRESHOLD);
-                isScrolling = false;
-            });
-            isScrolling = true;
+        if (window.pageYOffset > 300) {
+            goToTopButton.classList.add('visible');
+        } else {
+            goToTopButton.classList.remove('visible');
         }
     });
 
+    // Scroll to top when button is clicked
     goToTopButton.addEventListener('click', () => {
         window.scrollTo({
             top: 0,

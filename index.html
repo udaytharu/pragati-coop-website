@@ -9,23 +9,31 @@
     <link rel="apple-touch-icon" href="/assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/styles.css">
+    
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            // Initialize EmailJS with your public key
-            emailjs.init("YOUR_PUBLIC_KEY"); // Replace this with your actual EmailJS public key
+            emailjs.init("YOUR_PUBLIC_KEY");
         })();
     </script>
 </head>
 <body>
     <!-- Header Component Container -->
     <div id="header-container"></div>
-
+    
     <!-- Main Content -->
     <main id="main-content">
         <!-- Custom Banner Section -->
         <div id="home">
+
+            <!-- Marquee Section -->
+    <div class="play">
+        <marquee behavior="" direction="left">
+            <p>ध्येयः "क्षमतावान जनशत्तिबाट नीति, विधि र प्रविधिकाे अधिकतम प्रयाेग गरी गुणात्मक, प्रतिस्पर्धी र सर्वसुलभ वित्तीय सेवा तथा गैरवित्तीय सेवा मार्फत सदस्य एवं समुदायको आर्थिक, सामाजिक र सांस्कृतिक एवं वातावरणीय अवस्थामा सुधार ल्याउने"</p>
+        </marquee>
+    </div>
+
             <section class="custom-banner">
                 <div class="banner-content">
                     <div class="logo-image">
@@ -38,19 +46,25 @@
                         <p><span class="icon">✉️</span> <a href="maito:saccospragati@gmail.com">saccospragati@gmail.com</a></p>
                     </div>
                 </div>
-                <div class="banner-text" style="margin-top: 90px;">
+
+                <!-- Custom Alert Message -->
+                <div id="customAlert" class="custom-alert">
+                    <p>किस्ता र व्याज समयमै भुत्तान गरेमा व्याजमा ५% छुट दिइनेछ ।</p>
+                </div>
+
+                <div class="banner-text">
                     <h4>Welcome to Pragati SACCOS</h4>
-                    <p>स्थानीय प्रतिष्ठित, व्यावसायिक, सामाजसेवी व्यक्तिहरूको समूहद्वारा सञ्चालित यस प्रगति बचत तथा ऋण सहकारी संस्था लि. २०१६ अन्तर्गत वि.सं. २०५३/५/२० मा स्थापना भए बिर्दिया जिल्लामा कार्यक्षेत्र रहेको यस प्रगति बचत तथा ऋण सहकारी संस्था लि. ले सदस्य केन्द्रित भएर आफ्ना सदस्यहरूको आर्थिक, सामाजिक र सांस्कृतिक समृद्धि हासिल गर्न प्रमुख उद्देश्य राखेको छ। स्वावलम्बन, स्व-उत्तरदायित्व, समानता, उत्तरदायित्व यस संस्थाको मूल्यमा आधारित रहेको छ।<br>
-                        <br>
-                        हामी विभिन्न प्रकारका वित्तीय सेवाहरू (बचत, ऋण र रेमिट्यान्स) प्रदान गर्दछौं । सदस्य तथा समुदायको हितलाई प्राथमिकतामा राखी समाजको विकासमा सकारात्मक प्रभाव पार्ने अत्याधुनिक सेवाहरुको अध्ययन गरी समयसापेक्ष सुविधा प्रदान गर्दै आएको छौँ ।
-                    </p>
+
+                    <p>संस्थाको परिकल्पनाः सदस्यलाइ सम्पूर्णा वित्तीय सेवा प्रदान गर्न सक्षम समुदायको सर्वाेकृष्ट साकाेस<br><br>
+                        स्थानीय प्रतिष्ठित, व्यवसायिक, समाजसेवी व्यक्तिहरूको समूहद्वारा सहकारी ऐन २०४८ अन्तर्गत वि.सं. २०५२/५/२० मा स्थापना भै चितवन जिल्लाभर कार्यक्षेत्र रहेको यस राष्ट्रिय बचत तथा ऋण सहकारी संस्था लि. ले सदस्य केन्द्रित भई आफ्ना सदस्यहरूको आर्थिक, सामाजिक तथा सांस्कृतिक समृद्धी हासिल गर्नु प्रमुख उद्देश्य रहेको छ । स्वावलम्बन, स्व-उत्तरदायित्व, सामाजिक उत्तरदायित्व यस संस्थाको मूल्य एवं मान्यता रहेको छ ।<br><br>
+                    हामी विभिन्न प्रकारका वित्तीय सेवाहरू (बचत, ऋण र रेमिट्यान्स) प्रदान गर्दछौं । सदस्य तथा समुदायको हितलाई प्राथमिकतामा राखी समाजको विकासमा सकारात्मक प्रभाव पार्ने अत्याधुनिक सेवाहरुको अध्ययन गरी समयसापेक्ष सुविधा प्रदान गर्दै आएको छौँ ।</p>
+        
                     <div class="follow_us">
-                        <p>Follow us on our <a href="https://www.facebook.com/">facebook</a> page.</p>
+                        <p>Follow us on our <a href="https://www.facebook.com/pragatisaving">facebook</a> page.</p>
                     </div>
                 </div>
             </section>
         </div>
-
 
         <!-- Organization's Profile Section -->
         <section id="organization-profile">
@@ -69,7 +83,7 @@
                 <div class="profile-item">
                     <i class="fa fa-award" aria-hidden="true"></i>
                     <h3>Years of Service</h3>
-                    <p>25</p>
+                    <p>28</p>
                 </div>
                 <div class="profile-item">
                     <i class="fa fa-calculator" aria-hidden="true"></i>
@@ -137,7 +151,12 @@
                     <p>Fast and reliable money transfer. (IME money transfer)</p>
                 </div>
             </div>
-            <p><a href="/pages/downloads/downloads.html">Download</a> our services and policies</p>
+            <div class="more-link-container">
+                <a href="/pages/services/services.html" class="more-link">
+                    <span>थप सेवाहरू हेर्नुहोस्</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
         </section>
 
         <!-- Service Center Section -->
