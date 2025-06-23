@@ -1,6 +1,10 @@
+body, html {
+    color: #000;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, rgba(187, 222, 251, 0.9), rgba(227, 242, 253, 0.9));
+    background: linear-gradient(to right, rgba(0, 140, 68, 0.12), rgba(0, 140, 68, 0.18));
     margin: 0;
     padding: 0;
 }

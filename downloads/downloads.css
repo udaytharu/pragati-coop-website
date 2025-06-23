@@ -1,12 +1,13 @@
 /* styles.css */
-body {
+body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, rgba(187, 222, 251, 0.9), rgba(227, 242, 253, 0.9));
+    background: linear-gradient(to right, rgba(0, 140, 68, 0.12), rgba(0, 140, 68, 0.18));
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: #000;
 }
 
 .container {
@@ -103,6 +104,9 @@ h3 {
     padding: 8px 0;
     border-bottom: 1px solid #eee;
     transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .pdf-section ul li:hover {
@@ -124,6 +128,16 @@ h3 {
 
 .pdf-section ul li a:hover {
     color: #007bff;
+}
+
+.pdf-section ul li span {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 15px;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Ensure footer stays at bottom */
@@ -171,7 +185,11 @@ h3 {
     }
 
     .pdf-section ul li {
-        padding: 10px 0;
+        gap: 4px;
+    }
+
+    .pdf-section ul li span {
+        font-size: 14px;
     }
 
     .pdf-section ul li a {
@@ -210,6 +228,14 @@ h3 {
         height: calc(100% - 100px); /* Adjust height for smaller screens */
     }
 
+    .pdf-section ul li {
+        gap: 2px;
+    }
+
+    .pdf-section ul li span {
+        font-size: 13px;
+    }
+
     .pdf-section ul li a {
         font-size: 13px;
         padding: 6px;
@@ -239,5 +265,56 @@ h3 {
 
     .pdf-section {
         height: calc(100% - 90px); /* Adjust height for landscape mode */
+    }
+}
+
+.pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 12px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    background: #e3f2fd;
+    color: #1976d2;
+    box-shadow: 0 1px 4px rgba(25, 118, 210, 0.06);
+}
+.pdf-btn i {
+    font-size: 1em;
+}
+.pdf-btn.view-btn {
+    background: #e0f7ec;
+    color: #008c44;
+}
+.pdf-btn.view-btn:hover {
+    background: #b2e5d1;
+    color: #006c35;
+}
+.pdf-btn.download-btn {
+    background: #c8e6c9;
+    color: #008c44;
+}
+.pdf-btn.download-btn:hover {
+    background: #a5d6a7;
+    color: #006c35;
+}
+@media (max-width: 768px) {
+    .pdf-btn {
+        font-size: 13px;
+        padding: 4px 8px;
+        margin-left: 4px;
+    }
+}
+@media (max-width: 480px) {
+    .pdf-btn {
+        font-size: 12px;
+        padding: 3px 6px;
+        margin-left: 2px;
     }
 }

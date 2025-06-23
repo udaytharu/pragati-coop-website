@@ -110,14 +110,14 @@ The website uses a component-based architecture for better maintainability and r
 
 ## Recent Updates
 
-- Combined Privacy Policy and Terms of Service into a single page
-- Updated service images to display full images while maintaining aspect ratio
-- Added welcome alert message for first-time visitors
-- Improved responsive design for all pages
-- Updated footer with privacy policy link
-- Enhanced service cards with better image display
-- Added bank details page with QR codes
-- Implemented notice board with image support
+- **Animated Counters**: Organization profile numbers (active members, branches, years, projects) now animate on page load for a dynamic effect.
+- **Notice Alert Modal**: A modal with a notice image appears on first website open (per session). After closing, a responsive alert message is shown. Clicking the notice image opens it in a new tab.
+- **PDF View/Download Buttons**: The downloads page now features inline "View" and "Download" buttons for each PDF, styled for clarity and mobile responsiveness.
+- **Bank Details Page in Nepali**: The bank details page is fully translated into Nepali, with improved mobile responsiveness and clear instructions for payment and contact.
+- **Outreach Section Improvements**: Outreach items and images are now square and styled to match the services section, with responsive layouts for all devices.
+- **Service Section Icons**: Each service item features an icon above the heading, followed by a description, for a visually consistent and modern look.
+- **Typography Consistency**: Heading and paragraph sizes are now consistent across all pages, using a CSS variable-based scale for better readability and design harmony.
+- **Alert Message Frequency**: The alert message and notice modal only show once per session for a non-intrusive user experience.
 
 ## Setup and Usage
 

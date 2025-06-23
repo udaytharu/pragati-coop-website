@@ -46,6 +46,8 @@ function showNotification(message, type = 'info') {
 
 // Alert Message Functionality
 function showAlertMessage() {
+    // Only show if not already shown in this session
+    if (sessionStorage.getItem('alertShown')) return;
     setTimeout(function() {
         const alert = document.getElementById('customAlert');
         if (alert) {
@@ -74,6 +76,9 @@ function showAlertMessage() {
             alert.querySelector('.alert-close').addEventListener('click', function() {
                 clearTimeout(autoHideTimeout);
             });
+
+            // Mark as shown for this session
+            sessionStorage.setItem('alertShown', 'true');
         }
     }, 1000);
 }
@@ -154,7 +159,69 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    showAlertMessage();
+    // Notice Modal Logic
+    var noticeModal = document.getElementById('notice-modal');
+    var noticeClose = document.getElementById('notice-modal-close');
+    function showAlertMessageAfterModal() {
+        showAlertMessage();
+    }
+    if (noticeModal && noticeClose) {
+        // Only show modal if not already shown in this session
+        if (!sessionStorage.getItem('noticeModalShown')) {
+            noticeModal.style.display = 'flex';
+            var noticeImg = noticeModal.querySelector('.notice-modal-img');
+            if (noticeImg) {
+                noticeImg.style.cursor = 'pointer';
+                noticeImg.onclick = function(e) {
+                    e.stopPropagation();
+                    window.open('/notice/notice img/notice1.jpg', '_blank');
+                };
+            }
+            noticeClose.onclick = function() {
+                noticeModal.style.display = 'none';
+                sessionStorage.setItem('noticeModalShown', 'true');
+                showAlertMessageAfterModal();
+            };
+            noticeModal.onclick = function(e) {
+                if (e.target === noticeModal) {
+                    noticeModal.style.display = 'none';
+                    sessionStorage.setItem('noticeModalShown', 'true');
+                    showAlertMessageAfterModal();
+                }
+            };
+        } else {
+            showAlertMessage();
+        }
+    } else {
+        showAlertMessage();
+    }
+
+    // Animate all organization profile numbers
+    const counters = [
+        { id: 'active-members-count', target: 5000, duration: 1800 },
+        { id: 'branches-count', target: 8, duration: 1000 },
+        { id: 'years-count', target: 28, duration: 1200 },
+        { id: 'projects-count', target: 50, duration: 1200 }
+    ];
+    counters.forEach(function(counter) {
+        var el = document.getElementById(counter.id);
+        if (el) {
+            var start = 0;
+            var startTime = null;
+            function animateCount(timestamp) {
+                if (!startTime) startTime = timestamp;
+                var progress = Math.min((timestamp - startTime) / counter.duration, 1);
+                var value = Math.floor(progress * (counter.target - start) + start);
+                el.textContent = value.toLocaleString('en-US');
+                if (progress < 1) {
+                    requestAnimationFrame(animateCount);
+                } else {
+                    el.textContent = counter.target.toLocaleString('en-US');
+                }
+            }
+            requestAnimationFrame(animateCount);
+        }
+    });
 });
 
 // Scroll Handling with Performance Optimization
