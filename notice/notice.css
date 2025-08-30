@@ -4,7 +4,7 @@ body, html {
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, rgba(0, 140, 68, 0.12), rgba(0, 140, 68, 0.18));
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.12) 0%, rgba(254, 243, 199, 0.18) 100%);
     margin: 0;
     padding: 0;
 }
@@ -23,36 +23,20 @@ h1 {
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Notice marquee for continuous flow */
+.notice-marquee {
     display: flex;
-    overflow-x: auto;
     gap: 20px;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
+    animation: notice-scroll 60s linear infinite;
+    width: max-content;
 }
 
-/* Customize scrollbar for Chrome/Safari */
-.notice-container::-webkit-scrollbar {
-    height: 8px;
-}
-
-.notice-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-.notice-container::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-
-.notice-container::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/* News item styling */
-.news-item {
+/* Notice item styling */
+.notice-item {
     flex: 0 0 300px;
     background: rgba(255, 255, 255, 0.9);
     padding: 15px;
@@ -61,12 +45,27 @@ h1 {
     transition: transform 0.3s ease;
 }
 
-.news-item:hover {
+.notice-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.news-item h2 {
+/* Continuous scrolling animation */
+@keyframes notice-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover for better interaction */
+.notice-container:hover .notice-marquee {
+    animation-play-state: paused;
+}
+
+.notice-item h2 {
     font-size: 1.5rem;
     color: #333;
     text-align: center;
@@ -95,12 +94,12 @@ h1 {
         padding: 15px;
     }
 
-    .news-item {
+    .notice-item {
         flex: 0 0 250px;
         padding: 10px;
     }
 
-    .news-item h2 {
+    .notice-item h2 {
         font-size: 1.3rem;
     }
 
@@ -119,11 +118,11 @@ h1 {
         margin-top: 80px;
     }
 
-    .news-item {
+    .notice-item {
         flex: 0 0 200px;
     }
 
-    .news-item h2 {
+    .notice-item h2 {
         font-size: 1.2rem;
     }
 

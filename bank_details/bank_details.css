@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, rgba(0, 140, 68, 0.12), rgba(0, 140, 68, 0.18));
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(30, 64, 175, 0.18) 100%);
     color: #000;
 }
 
@@ -41,7 +41,6 @@ body, html {
 .email-instruction a {
     color: blue;
     font-weight: 700;
-    text-decoration: underline;
     display: inline-flex;
     align-items: center;
     gap: 4px;
