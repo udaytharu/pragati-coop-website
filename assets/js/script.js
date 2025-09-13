@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 noticeImg.style.cursor = 'pointer';
                 noticeImg.onclick = function(e) {
                     e.stopPropagation();
-                    window.open('/notice/notice img/notice1.jpg', '_blank');
+                    window.open('/notice/notice img/notice.png', '_blank');
                 };
             }
             noticeClose.onclick = function() {
